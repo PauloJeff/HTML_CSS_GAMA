@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML e CSS</title>
+    <style>
+        a:link {
+            color: red;
+        }
+        a:visited {
+            color: green;
+        }
+
+        a:hover {
+            color: indigo;
+        }
+
+        h1:hover {
+            color: khaki;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        h1.text-green {
+            color: green;
+        }
+
+        p.text-yellow {
+            color: yellow;
+        }
+
+        div.align-right h1 {
+            text-align: right;
+        }
+
+        div.align-right p {
+            text-align: right;
+        }
+    </style>
+</head>
+<body style="background-color:#d7d9dd;">
+    <h1 style="font-size: 100px; text-align: center;">
+        Hello World! Paulo Jefferson Mendes
+    </h1>
+
+    <div style="text-align: center;">
+        <a href="https://www.maujor.com">
+            Site do Maujor
+        </a><br>
+        <p>Maujor é o dinosauro da internet</p>
+    </div>
+
+    <div class="center">
+        <h1 class="text-green">H1 selecionado por nome e classe</h1>
+        <p class="text-yellow">Div com classe center.</p>
+    </div>
+
+    <div class="align-right">
+        <h1>Texto alinhado a direita, pois, esta dentro da div copm classe align-right</h1>
+        <p>Não vai estar alinhado, pois não cumpre os requisitos</p>
+    </div>
+
+    <div class="center-external">
+        <h1>Texto centralizado vindo do CSS externo</h1>
+    </div>
+
+    <div class="container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+    <div class="container-flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+    <div>
+        <form>
+            <label for="name">Primeiro Nome</label>
+            <input type="text" id="name" placeholder="Primeiro nome">
+
+            <label for="last-name">Sobrenome</label>
+            <input type="text" id="last-name" placeholder="Sobrenome">
+
+            <label for="pais">País</label>
+            <select id="pais">
+                <option>Brasil</option>
+                <option>Argentina</option>
+                <option>Uruguai</option>
+            </select>
+
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>
